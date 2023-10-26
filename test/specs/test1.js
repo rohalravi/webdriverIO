@@ -1,0 +1,13 @@
+
+describe("First demo test", function(){
+
+    it("Navigate to url", async ()=>{
+        browser.url("https://google.com")
+
+        await $('[name="q"]').setValue('WebdriverIO')
+
+        await $('[name="btnK"]').click()
+
+        browser.pause(2000)
+    })
+})
